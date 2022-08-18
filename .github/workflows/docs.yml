@@ -1,0 +1,28 @@
+name: build docs 
+on:
+  push:
+    branches:
+      - master
+jobs:
+  deploy-docs:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-python@v2
+        with:
+          python-version: 3.x
+      - run: |
+          sudo apt-get update
+          sudo apt-get install -y -q --no-install-recommends doxygen
+      - run: |
+          pip install mkdocs-material
+          pip install mkdocs mkdocs-material
+      - run: |
+          wget https://github.com/matusnovak/doxybook2/releases/download/v1.4.0/doxybook2-linux-amd64-v1.4.0.zip -O doxybook2.zip
+          unzip -p doxybook2.zip bin/doxybook2 >doxybook2
+          chmod +x doxybook2
+      - run: |
+          doxygen
+          mkdir -p docs/api
+          ./doxybook2 -i docs/xml -o docs/api
+      - run: mkdocs gh-deploy --force

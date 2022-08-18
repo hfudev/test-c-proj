@@ -1,0 +1,76 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="test__comp_8h" kind="file" language="C++">
+    <compoundname>test_comp.h</compoundname>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="test__comp_8h_1a7e8442e7139d840c15bdee83789f7ae8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void print</definition>
+        <argsstring>(void)</argsstring>
+        <name>print</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>print function </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="test_comp/include/test_comp.h" line="6" column="6" declfile="test_comp/include/test_comp.h" declline="6" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="test__comp_8h_1a9920dc7dca5851780d0f0e43977bbdc8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void add</definition>
+        <argsstring>(int a, int b)</argsstring>
+        <name>add</name>
+        <param>
+          <type>int</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>b</declname>
+        </param>
+        <briefdescription>
+<para>add function </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>a</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>b</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>b </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="test_comp/include/test_comp.h" line="14" column="6" declfile="test_comp/include/test_comp.h" declline="14" declcolumn="6"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="6"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="test__comp_8h_1a7e8442e7139d840c15bdee83789f7ae8" kindref="member">print</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="test__comp_8h_1a9920dc7dca5851780d0f0e43977bbdc8" kindref="member">add</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>a,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>b);</highlight></codeline>
+    </programlisting>
+    <location file="test_comp/include/test_comp.h"/>
+  </compounddef>
+</doxygen>
